@@ -13,9 +13,13 @@ splice++;
 }
 
 savedPassword= window.prompt("What do you want you password to be?");
-savedPassword= savedPassword.trim().charAt(0).toUpperCase()+ savedPassword.trim().slice(1).toLowerCase
+savedPassword= savedPassword.trim().charAt(0).toUpperCase()+ savedPassword.trim().slice(1).toLowerCase();
+// above is method chain it says take saved password remove white space, go to the first character
+//uppercase it and add remove the white and the first letter and make it
+//lowercase(as in the rest of the letters)
 console.log(savedPassword);
 password=window.prompt("What is your password");//window prompt it allows user input
+password= password.trim().charAt(0).toUpperCase()+ password.trim().slice(1).toLowerCase();
 switch (true) {
     case password === savedPassword:
         
