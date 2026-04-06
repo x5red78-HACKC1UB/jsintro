@@ -5,7 +5,7 @@ let answer1;
 let text;
 document.getElementById("myButton").onclick = function(){
 text= document.getElementById("mytext").value
-window.alert(text)
+window.alert(text.slice(0,1));
 }
 
 savedPassword= window.prompt("What do you want you password to be?");
